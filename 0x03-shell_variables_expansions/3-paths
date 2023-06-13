@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '$(find "$directory" -type d | wc -l)'
+echo "$path_dirs" | tr ':' '\n' | wc -l
