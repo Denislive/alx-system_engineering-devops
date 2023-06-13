@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "(printf "%d\n" "$binary" 2>/dev/null)
+printf "%d\n" "$BINARY" 2>/dev/null
