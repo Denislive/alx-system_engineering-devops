@@ -1,9 +1,2 @@
-#!/bin/bash
 #!/bin/sh
-export count=0
-IFS=':'
-for dir in $PATH
-do
-  count=$(($count + 1))
-done
-printf "%s\n" "$count"
+echo "$(find "$directory" -type d)
