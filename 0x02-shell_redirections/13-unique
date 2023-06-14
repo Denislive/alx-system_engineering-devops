@@ -1,0 +1,2 @@
+#!/bin/bash
+read -r -p "Enter words (separated by spaces): " input; declare -A counts; read -ra words <<< "$input"; for word in "${words[@]}"; do ((counts[$word]++)); done; for word in "${words[@]}"; do if [[ ${counts[$word]} -eq 1 ]]; then echo "$word"; fi; done | sort
