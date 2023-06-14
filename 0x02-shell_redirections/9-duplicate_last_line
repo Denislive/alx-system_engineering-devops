@@ -1,2 +1,2 @@
 #!/bin/bash
-line_number=3 last_line=$(tail -n 1 iacta) perl -i -ne 'print; print if $. == '$line_number'' iacta
+echo "$(tail -n 1 iacta)" > iacta
